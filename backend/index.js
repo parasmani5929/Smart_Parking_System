@@ -8,7 +8,7 @@ const router = require("./routes");
 dotenv.config();
 const app = express();
 
-// mongo databse connection
+// mongoDB databse connection
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -22,7 +22,7 @@ mongoose.connect(process.env.MONGO_URI, {
 
 // middlewares
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000'],  // Allow requests from both frontend ports
+  origin: ['http://localhost:5173'],  // Allow requests from both frontend ports
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
