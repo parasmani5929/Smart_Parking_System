@@ -22,7 +22,7 @@ mongoose.connect(process.env.MONGO_URI, {
 
 // middlewares
 app.use(cors({
-  origin: ['http://localhost:5173'],  // Allow requests from both frontend ports
+  origin: process.env.CLIENT_URL,  // Allow requests from both frontend ports
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
