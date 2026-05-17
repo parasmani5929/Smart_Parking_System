@@ -62,7 +62,7 @@ console.log('- /api/chatbot/chat (POST)');
 console.log('- /api/chatbot/test (GET)');
 
 //start listening to the server
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
   console.log(`Available endpoints:`);
