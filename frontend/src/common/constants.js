@@ -1,1 +1,1 @@
-export const BACKEND_URL = "https://smart-parking-system-h6a5.onrender.com";
+export const BACKEND_URL = process.env.VITE_BACKEND_URL;
