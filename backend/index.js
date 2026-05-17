@@ -57,17 +57,11 @@ app.post("/api/chatbot", (req,res) =>{
 // API routes
 console.log('Setting up API routes...');
 app.use('/api', router);
-console.log('API routes setup complete. Available routes:');
-console.log('- /api/chatbot/chat (POST)');
-console.log('- /api/chatbot/test (GET)');
+
 
 //start listening to the server
 const port = process.env.PORT;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
   console.log(`Available endpoints:`);
-  console.log(`- http://localhost:${port}/api`);
-  console.log(`- http://localhost:${port}/api/debug`);
-  console.log(`- http://localhost:${port}/api/chatbot/test`);
-  console.log(`- http://localhost:${port}/api/chatbot/chat`);
 });
