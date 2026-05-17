@@ -2,10 +2,13 @@ import axios from "axios";
 import { retrieveCache } from "./helpers";
 import { BACKEND_URL } from "./constants";
 
+
+
 const request = async (config, jwt) => {
     if(jwt === undefined)
         jwt = retrieveCache('jwt');
     try{
+        console.log(BACKEND_URL);
         const res = await axios.request({
             baseURL: BACKEND_URL,
             headers:{
