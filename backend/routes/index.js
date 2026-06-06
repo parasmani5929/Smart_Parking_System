@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const chatbotRoutes = require('./chatbot');
+const chatbotRoutes = require('./chatbot'); 
 router.use('/chatbot', chatbotRoutes);
 
 router.get('/test', (req, res) => {
