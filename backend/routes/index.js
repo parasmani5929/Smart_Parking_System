@@ -7,6 +7,6 @@ router.use('/chatbot', chatbotRoutes);
 router.get('/test', (req, res) => {
   console.log('API test route hit');
   res.json({ message: 'API routes are working!' });
-});
+}); 
 
 module.exports = router;
